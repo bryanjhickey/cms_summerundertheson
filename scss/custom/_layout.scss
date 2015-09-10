@@ -1,0 +1,32 @@
+$section-padding: rem-calc(120);
+
+header {
+	padding: $section-padding 0;
+	background: $base;
+}
+section {
+	padding: $section-padding 0;
+}
+.section__missionaries {
+	background: $jet;
+	.section--heading {
+		color: $white;
+	}
+}
+
+.section--heading {
+	margin-bottom: rem-calc(40);
+}
+
+.image--profile {
+	border-radius: 100%;
+	width: rem-calc(140);
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: rem-calc(60);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
