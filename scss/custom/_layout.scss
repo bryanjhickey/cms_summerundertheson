@@ -73,6 +73,9 @@ header {
 .section__content {
 	padding: $section-padding 0;
 }
+.section__welcome {
+	padding-bottom: 0;
+}
 .section__missionaries {
 	margin: $section-padding 0;
 	background: $jet;
@@ -124,6 +127,9 @@ header {
 h1, h2, h3, h4, h5, h6 {
 	@include font-ultra;
 	text-align: center;
+}
+.name h1 {
+	text-align: left;
 }
 .site-title {
 	font-size: rem-calc(80);
