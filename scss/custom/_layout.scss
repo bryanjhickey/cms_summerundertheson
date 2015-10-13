@@ -58,7 +58,9 @@
   animation: fadeIn 2.5s;
   opacity: 1; }
 
-
+p.lead {
+	font-size: 130%;
+}
 
 $section-padding: rem-calc(80);
 
