@@ -179,8 +179,8 @@ header {
 	color: $jet;
 	border: 3px solid $jet;
 	@media #{$small-only} {
-		padding: rem-calc(10) rem-calc(40);
-		font-size: rem-calc(20);
+		padding: rem-calc(10) rem-calc(20);
+		font-size: rem-calc(18);
 	}
 	&.pricing-header {
 		line-height: 1;
