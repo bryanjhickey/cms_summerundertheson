@@ -169,7 +169,6 @@ header {
 	@extend .text-center;
 	margin-bottom: rem-calc(80);
 	@media #{$small-only} {
-		margin-top: rem-calc(80);
 		margin-bottom: rem-calc(40);
 	}
 }
@@ -179,6 +178,10 @@ header {
 	padding: rem-calc(10) rem-calc(60);
 	color: $jet;
 	border: 3px solid $jet;
+	@media #{$small-only} {
+		padding: rem-calc(10) rem-calc(40);
+		font-size: rem-calc(26);
+	}
 	&.pricing-header {
 		line-height: 1;
 	}
