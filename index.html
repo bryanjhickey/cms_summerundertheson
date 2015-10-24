@@ -15,7 +15,7 @@
 			<nav class="top-bar" data-topbar role="navigation">
 				<ul class="title-area">
 					<li class="name">
-						<h1><a href="#">We Are Strangers</a></h1>
+						<h1><a href="#"> <img class="menu-logo" src="/img/cms.svg">We Are Strangers</a></h1>
 					</li>
 					<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 					<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -27,7 +27,7 @@
 				      		<li data-magellan-arrival="about" class="active"><a href="#about">ABOUT</a></li>
 				      		<li data-magellan-arrival="speakers"><a href="#speakers">SPEAKERS</a></li>
 				      		<li data-magellan-arrival="missionaries"><a href="#missionaries">MISSIONARIES</a></li>
-				      		<li data-magellan-arrival="seminars"><a href="#seminars">SEMINARS</a></li>
+				      		<li data-magellan-arrival="schedule"><a href="#schedule">SCHEDULE</a></li>
 				      		<li data-magellan-arrival="venue"><a href="#venue">VENUE</a></li>
 				      		<li data-magellan-arrival="youthandkids"><a href="#youthandkids">YOUTH + KIDS</a></li>
 				      		<li data-magellan-arrival="contact"><a href="#contact">CONTACT</a></li>
@@ -40,9 +40,17 @@
 	<header data-magellan-destination="about">
 	<a name="about"></a>
 		<div class="row">
-			<div class="small-12 text-center columns">
+			<div class="small-11 medium-9 small-centered columns">
 				<h1 class="site-title"><span class="title-lead">We Are</span><br>Strangers</h1>
-				<h2 class="sub-title">13 – 16 JANUARY 2016</h2>
+
+				<div class="row">
+					<div class="small-4 small-centered medium-3 large-2 columns">
+						<hr class="header-hr">
+					</div>
+				</div>
+				<h2 class="sub-title">SUMMER UNDER THE SUN  // 3 – 16 JANUARY 2016</h2>
+				<img class="banner-image" src="/img/header.jpg">
+
 			</div>
 		</div>
 	</header>
@@ -51,7 +59,7 @@
 		<div class="row">
 			<div class="small-11 medium-7 small-centered columns">
 				<p class="lead">In 1 Peter 2:11 the King James Version describes believers as "strangers and pilgrims". Although our earthly home may be Australia, the Bible calls us to live a different lifestyle to most Aussies. And the more we follow that command, the more we are, indeed, strangers to the world around us.</p>
-				<p  class="lead">As CMS sends missionaries to cross cultures with the Gospel, to places that are not their home, so too our home as Christians really isn't here on earth, but in heaven. Whatever our role in the partnership of mission, we are called to live out Jesus' love and life here on earth as strangers until we are ready to return to our heavenly home. </p>
+				<p  class="lead">As CMS sends missionaries to cross cultures with the Gospel, to places that are not their home, so too our home as Christians really isn't here on earth, but in heaven. Whatever our role in the partnership of mission, we are called to live out Jesus' love and life here on earth as strangers until we are ready to return to our heavenly home.</p>
 			</div>
 		</div>
 	</section>
@@ -60,25 +68,27 @@
 	<a name="speakers"></a>
 		<div class="row">
 			<div class="small-12 columns">
-				<h2 class="section--heading">SPEAKERS</h2>
-				<ul class="small-block-grid-1 medium-block-grid-4">
+				<div class="section--headingwrapper">
+					<h2 class="section--heading">SPEAKERS</h2>
+				</div>
+				<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
 					<li>
-						<img class="bio--image" src="/img/blank-1200.jpg">
-						<h2 class="bio--title">Glen Davies</h2>
-						<p>Glen is <a href="http://sydneyanglicans.net/seniorclergy/archbishop_davies" rel="nofollow" target="_blank">Archbishop of Sydney</a> and he will lead the daily Bible study. Working through the book of 1 Peter, Glen will expose the truth that as Christians “we are strangers.”</p>
+						<img class="bio--image" src="/img/glen-davies.jpg" alt="Glen Davies">
+						<h2 class="bio--title">Glenn Davies</h2>
+						<p>Glenn is <a href="http://sydneyanglicans.net/seniorclergy/archbishop_davies" rel="nofollow" target="_blank">Archbishop of Sydney</a> and he will lead the daily Bible studies. Working through the book of 1 Peter, Glenn will expose the truth that as Christians "we are strangers."</p>
 					</li>
 					<li>
-						<img class="bio--image" src="/img/blank-1200.jpg">
+						<img class="bio--image" src="/img/greg-anderson.jpg" alt="Greg Anderson">
 						<h2 class="bio--title">Greg Anderson</h2>
 						<p>Greg is Bishop of the Northern Territory. He spent 12 years working with indigenous church leaders at Nungalinya College and was the head of the Department of Mission at <a href="https://www.moore.edu.au/" rel="nofollow" target="_blank">Moore College</a>. Greg's theme is the vital importance of partnerships with indigenous churches.</p>
 					</li>
 					<li>
-						<img class="bio--image" src="/img/blank-1200.jpg">
+						<img class="bio--image" src="/img/jude-long.jpg" alt="Jude Long">
 						<h2 class="bio--title">Jude Long</h2>
 						<p>Jude is Principal of <a href="http://www.nungalinya.edu.au/" rel="nofollow" target="_blank">Nungalinya College</a>, which provides theological and literacy training for indigenous Australians. She examines the gaps in understanding between indigenous and non-indigenous Christians.</p>
 					</li>
 					<li>
-						<img class="bio--image" src="/img/blank-1200.jpg">
+						<img class="bio--image" src="/img/david-williams.jpg" alt="David Williams">
 						<h2 class="bio--title">David Williams</h2>
 						<p>David is Director of Training and Development for <a href="http://www.cms.org.au/" rel="nofollow" target="_blank">CMS Australia</a> at <a href="http://www.cms.org.au/about/st-andrews-hall" rel="nofollow" target="_blank">St Andrew’s Hall</a>, Melbourne. David’s theme is contemporary changes in missionary practice.</p>
 					</li>
@@ -87,51 +97,55 @@
 		</div>
 	</section>
 
-	<section data-magellan-destination="missionaries" class="section__content section__missionaries">
+	<section id="missionaries" data-magellan-destination="missionaries" class="section__content section__missionaries">
 	<a name="missionaries"></a>
 		<div class="row">
-			<div class="small-10 small-centered medium-12 medium-uncentered columns">
-				<h2 class="section--heading">Meet The Missionaries</h2>
-				<ul class="small-block-grid-1 medium-block-grid-4" data-equalizer>
-					<li>
+			<div class="small-10 small-centered medium-12 text-center medium-uncentered columns">
+				<div class="section--headingwrapper">
+					<h2 class="section--heading ">Meet The Missionaries</h2>
+				</div>
+				<div class="row" data-equalizer>
+					<div class="small-12 medium-6 large-3 columns">
 						<div class="missionary--container" data-equalizer-watch>
-							<img src="/img/blank-1200.jpg" alt="Andrew and Claire Livingstone">
+							<img src="/img/livingston.jpg" alt="Andrew and Claire">
 							<h2 class="missionary--title">Andrew &amp; Claire</h2>
 							<p class="missionary--bio">Ministry to international students in Lausanne, Switzerland</p>
 						</div>
-					</li>
-					<li>
+					</div>
+					<div class="small-12 medium-6 large-3 columns">
 						<div class="missionary--container" data-equalizer-watch>
-							<img src="/img/blank-1200.jpg" alt="Mark and Louise">
+							<img src="/img/mark-louise.jpg" alt="Mark and Louise">
 							<h2 class="missionary--title">Mark &amp; Louise</h2>
 							<p class="missionary--bio">Theological education for Christian leaders in South East Asia, and local ministry</p>
 						</div>
-					</li>
-					<li>
+					</div>
+					<div class="small-12 medium-6 large-3 columns">
 						<div class="missionary--container" data-equalizer-watch>
-							<img src="/img/blank-1200.jpg" alt="Andrew and Dominique Gifford">
+							<img src="/img/gifford.jpg" alt="Andrew and Dominique">
 							<h2 class="missionary--title">Andrew &amp; Dominique</h2>
 							<p class="missionary--bio">Church planting in Barcelona, Spain</p>
 						</div>
-					</li>
-					<li>
+					</div>
+					<div class="small-12 medium-6 large-3 columns">
 						<div class="missionary--container" data-equalizer-watch>
-							<img src="/img/blank-1200.jpg" alt="Jon and Deborah">
+							<img src="/img/jon-deborah.jpg" alt="Jon and Deborah">
 							<h2 class="missionary--title">Jon &amp; Deborah</h2>
 							<p class="missionary--bio">Mentoring youth and church leaders in South East Asia.</p>
 						</div>
-					</li>
+					</div>
 				</ul>
 			</div>
 		</div>
 	</section>
 
 
-	<section data-magellan-destination="seminars" class="section__content section__schedule">
-	<a name="seminars"></a>
+	<section data-magellan-destination="schedule" class="section__content section__schedule">
+	<a name="schedule"></a>
 		<div class="row">
 			<div class="small-12 columns">
-				<h2 class="section--heading">Seminars &amp; Schedule</h2>
+				<div class="section--headingwrapper">
+					<h2 class="section--heading">Seminars &amp; Schedule</h2>
+				</div>
 				<ul class="tabs" data-tab>
 					<li class="tab-title active"><a href="#wed">WED</a></li>
 					<li class="tab-title"><a href="#thur">THUR</a></li>
@@ -142,7 +156,7 @@
 					<div class="content active" id="wed">
 						<div class="content-wrapper">
 							<div class="row">
-								<div class="small-12 medium-4 columns">
+								<div class="small-12 medium-6 large-4 columns">
 									<table>
 										<tbody>
 											<tr>
@@ -159,7 +173,7 @@
 											</tr>
 											<tr>
 												<td>11:30 – 12:45pm</td>
-												<td>Keynote: Greg Anderson, Jude Long, David Williams </td>
+												<td>Keynote: Greg Anderson</td>
 											</tr>
 											<tr>
 												<td>12:45 – 2:15pm</td>
@@ -193,12 +207,13 @@
 									</table>
 								</div>
 
-								<div class="small-12 medium-7 medium-offset-1 columns">
-									<h3>Mission Seminars</h3>
-									<ul class="small-block-grid-3 medium-block-grid-4">
-										<li><img src="/img/blank-1200.jpg" alt=""><h5>Sample Title</h5></li>
-										<li><img src="/img/blank-1200.jpg" alt=""><h5>Sample Title</h5></li>
-									</ul>
+								<div class="small-12 medium-6 large-7 large-offset-1 columns">
+									<h3 class="subtitle__title">Mission Seminars</h3>
+									<p><strong>Jude Long:</strong> Ministry to Indigenous Christians</p>
+									<p><strong>Andrew &amp; Claire:</strong> Taking Conversations Deeper: How to turn a chance meeting into an opportunity to share Jesus.</p>
+									<p><strong>Mark &amp; Louise with Jon &amp; Deborah:</strong> The Bible in Different Cultural Contexts: What it means to use the Bible with people who know nothing; with youth at church; with other Christians.</p>
+									<p><strong>Andrew &amp; Dominique:</strong> Reading your Culture: How to read your culture and recognise opportunities</p>
+
 								</div>
 							</div>
 						</div>
@@ -206,7 +221,7 @@
 					<div class="content" id="thur">
 						<div class="content-wrapper">
 							<div class="row">
-								<div class="small-12 medium-4 columns">
+								<div class="small-12 medium-6 large-4 columns">
 									<table>
 										<tbody>
 											<tr>
@@ -223,7 +238,7 @@
 											</tr>
 											<tr>
 												<td>11:30 – 12:45pm</td>
-												<td>Keynote: Greg Anderson, Jude Long, David Williams </td>
+												<td>Keynote: Jude Long</td>
 											</tr>
 											<tr>
 												<td>12:45 – 2:15pm</td>
@@ -257,17 +272,12 @@
 									</table>
 								</div>
 
-								<div class="small-12 medium-7 medium-offset-1 columns">
-									<h3>Mission Seminars</h3>
-									<ul class="small-block-grid-3 medium-block-grid-4">
-										<li><img src="/img/blank-1200.jpg" alt=""><h5>Sample Title</h5></li>
-										<li><img src="/img/blank-1200.jpg" alt=""><h5>Sample Title</h5></li>
-										<li><img src="/img/blank-1200.jpg" alt=""><h5>Sample Title</h5></li>
-										<li><img src="/img/blank-1200.jpg" alt=""><h5>Sample Title</h5></li>
-										<li><img src="/img/blank-1200.jpg" alt=""><h5>Sample Title</h5></li>
-										<li><img src="/img/blank-1200.jpg" alt=""><h5>Sample Title</h5></li>
-										<li><img src="/img/blank-1200.jpg" alt=""><h5>Sample Title</h5></li>
-									</ul>
+								<div class="small-12 medium-6 large-7 large-offset-1 columns">
+									<h3 class="subtitle__title">Mission Seminars</h3>
+									<p><strong>Julie-Anne Laird:</strong> (<a href="https://www.afes.org.au/profile/julie-anne-laird" target="_blank" rel="nofollow">AFES senior staff worker</a>). Talking about tricky topics with non-Christians!</p>
+									<p><strong>Vinod Victor:</strong> (St Matthews Ashburton and <a href="http://asiacms.net/people/board-of-trustees/" target="_blank" rel="nofollow">AsiaCMS</a>). Sharing the gospel with people from South Asia</p>
+									<p><strong>Wei-Han Kuan:</strong> Gospel ministry multiplication</p>
+
 								</div>
 							</div>
 						</div>
@@ -275,7 +285,7 @@
 					<div class="content" id="fri">
 						<div class="content-wrapper">
 							<div class="row">
-							<div class="small-12 medium-4 columns">
+							<div class="small-12 medium-6 large-4 columns">
 								<table>
 									<tbody>
 										<tr>
@@ -292,7 +302,7 @@
 										</tr>
 										<tr>
 											<td>11:30 – 12:45pm</td>
-											<td>Keynote: Greg Anderson, Jude Long, David Williams </td>
+											<td>Keynote: David Williams </td>
 										</tr>
 										<tr>
 											<td>12:45 – 2:15pm</td>
@@ -326,14 +336,11 @@
 								</table>
 							</div>
 
-							<div class="small-12 medium-7 medium-offset-1 columns">
-								<h3>Mission Seminars</h3>
-								<ul class="small-block-grid-3 medium-block-grid-4">
-									<li><img src="/img/blank-1200.jpg" alt=""><h5>Sample Title</h5></li>
-									<li><img src="/img/blank-1200.jpg" alt=""><h5>Sample Title</h5></li>
-									<li><img src="/img/blank-1200.jpg" alt=""><h5>Sample Title</h5></li>
-									<li><img src="/img/blank-1200.jpg" alt=""><h5>Sample Title</h5></li>
-								</ul>
+							<div class="small-12 medium-6 large-7 large-offset-1 columns">
+								<h3 class="subtitle__title">Mission Seminars</h3>
+								<p><strong>Bernie Power:</strong> (Islam and Christian-Muslim Relations Lecturer at <a href="http://www.mst.edu.au/faculty/">MST</a>). What would Jesus do? Is Islam good or evil? What is the Christian response needed in understanding Islam and showing love?</p>
+								<p><strong>Panel Discussion:</strong> The Mission-Hearted Church. For anyone in full time ministry, this session examines how to develop our churches to be mission-hearted.</p>
+								<p><strong>Mentac:</strong> (<a href="http://www.cms.org.au/about/serving-with-CMS/mentac">Mentac Cross-Cultural Apprenticeships</a>). Why training and mentoring in the process of cross-cultural ministry lays a foundation for effective witness to the cultures on our doorstep.</p>
 							</div>
 							</div>
 						</div>
@@ -341,7 +348,7 @@
 					<div class="content" id="sat">
 						<div class="content-wrapper">
 							<div class="row">
-							<div class="small-12 medium-4 columns">
+							<div class="small-12 medium-6 large-4 columns">
 								<table>
 									<tbody>
 										<tr>
@@ -358,7 +365,7 @@
 										</tr>
 										<tr>
 											<td>11:30 – 12:45pm</td>
-											<td>Keynote: Greg Anderson, Jude Long, David Williams </td>
+											<td>Keynote: Greg Anderson</td>
 										</tr>
 										<tr>
 											<td>12:45 – 2:15pm</td>
@@ -392,13 +399,14 @@
 								</table>
 							</div>
 
-							<div class="small-12 medium-7 medium-offset-1 columns">
-								<h3>Mission Seminars</h3>
-								<ul class="small-block-grid-3 medium-block-grid-4">
-									<li><img src="/img/blank-1200.jpg" alt=""><h5>Sample Title</h5></li>
-									<li><img src="/img/blank-1200.jpg" alt=""><h5>Sample Title</h5></li>
-									<li><img src="/img/blank-1200.jpg" alt=""><h5>Sample Title</h5></li>
-								</ul>
+							<div class="small-12 medium-6 large-7 large-offset-1 columns">
+								<h3 class="subtitle__title">Mission Seminars</h3>
+								<p><strong>David Williams:</strong> Honour and Shame Cultures – How do they work and how do they affect me?</p>
+								<p><strong>Andrew &amp; Claire:</strong> Taking Conversations Deeper – How to turn a chance meeting into an opportunity to share Jesus.</p>
+								<p><strong>Mark &amp; Louise with Jon &amp; Deborah:</strong> The Bible in Different Cultural Contexts – What it means to use the Bible with people who know nothing; with youth at church; with other Christians.</p>
+								<p><strong>Andrew and Dom Gifford:</strong> Reading Your Culture –  How to read your culture and recognise opportunities.</p>
+								<p><strong>???????????????:</strong> Me, a missionary? – How to become a missionary with CMS.</p>
+
 							</div>
 							</div>
 						</div>
@@ -406,25 +414,26 @@
 				</div>
 				<div class="row">
 					<div class="small-12 columns">
-						<h3>Summer Evenings</h3>
+						<h3 class="subtitle__title">Summer Evenings</h3>
 					</div>
 				</div>
 				<div class="row">
-					<div class="small-12 medium-6 columns">
+					<div class="summer-evenings-images small-12 small-centered medium-6 medium-uncentered columns">
 						<div class="row">
 							<div class="small-6 columns">
-								<img src="/img/blank-1200.jpg">
+								<img src="/img/sam.jpg">
 							</div>
 							<div class="small-6 columns">
-								<img src="/img/blank-1200.jpg">
+								<img src="/img/wei-han.jpg">
 							</div>
 						</div>
 					</div>
 					<div class="small-12 medium-6 columns">
-						<p>&nbsp;</p>
+						<p>If you can't get to the conference during the day, come after work and get a dose of some great speakers, hear from the missionaries and worship God. </p>
 						<p>Sam McGeown and Wei-Han Kuan currently work for CMS.</p>
 						<p>Sam spent more than a decade as a church planter in Japan, including work with homeless people. He is now in Brisbane, engaged in cross-cultural gospel outreach.</p>
 						<p>Wei-Han grew up as a young Christian in South-East Asia. Prior to training for ministry he worked in taxation law with the Australian Taxation Office and international business consulting firm KPMG. He now leads CMS in Victoria.</p>
+						<p>Dinner at 6pm – <a href="" target="_blank">book separately</a>. Sessions start at 7:30pm and end with refreshments at 9:15pm.</p>
 					</div>
 				</div>
 
@@ -432,63 +441,122 @@
 		</div>
 	</section>
 
-	<div class="row">
-		<div class="small-10 small-centered medium-4 columns"><hr style="border-color:#222;"></div>
-	</div>
-
 	<section data-magellan-destination="venue" class="section__content section__venue">
 	<a name="venue"></a>
 		<div class="row">
 			<div class="small-12 medium-6 columns">
-				<h2 class="section--heading">VENUE</h2>
+				<div class="section--headingwrapper">
+					<h2 class="section--heading">VENUE</h2>
+				</div>
 				<p>Crossway Centre, East Burwood has an air-conditioned 1000 seat auditorium which has wheel chair access and hearing loops. There is ample parking at Crossway. Regular bus services arrive and depart on Springvale Road, out the front of Crossway. The No. 75 tram runs along Burwood Highway, five minutes walk from Crossway</p>
 			</div>
 			<div class="small-12 medium-6 columns">
-				<h2 class="section--heading">CATERING</h2>
+				<div class="section--headingwrapper">
+					<h2 class="section--heading">CATERING</h2>
+				</div>
 				<p>Lunches will be provided as a part of your registration, if you book before Early Bird closes. We can cater for some special dietary needs.</p>
-				<p>Dinners can be booked on your registration form. There is only room for 120 on Wednesday to Friday, but we would like everyone to book in for Saturday for a BBQ together.</p>
+				<p>Dinners can be booked on your <a href="" title="_blank">registration form</a>. Wednesday and Friday are Mission dinners for all to attend. Thursday is a Young Adult dinner. There is only room for 120 on Wednesday to Friday, but we would like everyone to book in for Saturday for the BIG BBQ.</p>
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-12 medium-10 medium-centered columns" data-magellan-expedition>
+				<div class="section--headingwrapper">
+					<h2 class="section--heading">ACCOMMODATION</h2>
+				</div>
+				<div class="row">
+					<div class="small-12 medium-6 columns">
+						<p>If you are looking for accommodation locally, there are a number of options.</p>
+						<p>The <a href="http://www.accorhotels.com/gb/hotel-6413-ibis-melbourne-glen-waverley/index.shtml" title="_blank">Ibis Glen Waverley</a> is 5 minutes from the conference and currently has great offers for a room in January. It is close to restaurants, shops and public transport. It is only $108 per day currently. It is a similar price to the <a href="http://www.burwoodeastmotel.com.au/" target="_blank">East Burwood Motel</a>.</p>
+						<p>If you are looking for a cheaper option then the <a href="http://www.wantirnapark.com.au/" target="_blank">Wantirna Caravan Park</a> maybe an option.</p>
+					</div>
+					<div class="small-12 medium-6 columns">
+						<p>Deakin Burwood provides the option of <a href="http://www.deakin.edu.au/life-at-deakin/accommodation/residences/burwood/living-on-campus/short-stays" target="_blank">short-stay accommodation</a> at their residential facilities on campus. They have all single bedrooms, but organised into units of either 5-6 or 10 bedrooms with shared living areas and facilities, would work well for groups of friends or singles looking for accommodation.  There are also studio apartments.</p>
+						<p data-magellan-arrival="contact">For more information <a href="#contact">contact us</a>.</p>
+					</div>
+				</div>
 			</div>
 		</div>
 		 <div id="map"></div>
 	</section>
 
 
-	<section data-magellan-destination="youthandkids" class="section__content section__sos-events">
+	<section data-magellan-destination="youthandkids" class="section__content section__sutsyouth">
 	<a name="youthandkids"></a>
 		<div class="row">
-			<div class="small-12 columns">
-				<div class="panel">
-					<h2 class="section--heading">Radical Love<br>Youth Camp for High School Students</h2>
-					<p>SUTS Youth camp is a camp like no other! Spend six amazing days in Phillip Island, with awesome leaders, the beach, and new friends from across Melbourne. There’s plenty of fun and crazy activities for everyone – it’s a trip not to miss! The camp will include life changing Bible teaching, small groups with your mates, mission-minded speakers, and worship to draw you closer to God</p>
-					<dl>
-						<dt>Leaders</dt>
-						<dd>Will Thiel (Director), Sam Sinclair (Ass. Director)</dd>
-						<dt>When and Where</dt>
-						<dd>Monday 11 - Saturday 16 January 2016 at CYC Cowes, Phillip Island</dd>
-						<dt>Transport</dt>
-						<dd>Camp starts at Glen Waverley Anglican Church (GWAC). From there we will travel by bus to and from Phillip Island. You will be dropped off on the last day at Crossway Centre, Burwood East.</dd>
-						<dt>Cost</dt>
-						<dd>early Bird $405 (closes Nov 30). Full $445.</dd>
-						<dt>Contact</dt>
-						<dd>Contact <a href="mailto:youth.vic@cms.org.au">youth.vic@cms.org.au</a>, or call the CMS Victoria office on (03) 9894 4722.</dd>
-					</dl>
-					<a href="" class="button">Register Now</a>
+			<div class="small-12 small-centered medium-uncentered medium-6 large-6 columns">
+				<div class="row">
+					<div class="small-8 small-centered columns">
+						<img src="/img/radical-love.png">
+					</div>
 				</div>
+				<p>&nbsp;</p>
+				<dl>
+					<dt>Leaders</dt>
+					<dd>Will Thiel (Director), Sam Sinclair (Ass. Director)</dd>
+					<dt>When and Where</dt>
+					<dd>Monday 11 - Saturday 16 January 2016 at CYC Cowes, Phillip Island</dd>
+					<dt>Transport</dt>
+					<dd>Camp starts at Glen Waverley Anglican Church (GWAC). From there we will travel by bus to and from Phillip Island. You will be dropped off on the last day at Crossway Centre, Burwood East.</dd>
+					<dt>Cost</dt>
+					<dd>early Bird $405 (closes Nov 30). Full $445.</dd>
+					<dt>Contact</dt>
+					<dd>Contact <a href="mailto:youth.vic@cms.org.au">youth.vic@cms.org.au</a>, or call the CMS Victoria office on (03) 9894 4722.</dd>
+				</dl>
+			</div>
+			<div class="small-12 small-centered medium-uncentered medium-6 large-6 columns">
+				<div class="flex-video widescreen vimeo">
+					<iframe src="https://player.vimeo.com/video/142583006" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+				<p>&nbsp;</p>
+				<p class="text-center">SUTS Youth camp is a camp like no other! Spend six amazing days in Phillip Island, with awesome leaders, the beach, and new friends from across Melbourne. There’s plenty of fun and crazy activities for everyone – it’s a trip not to miss! The camp will include life changing Bible teaching, small groups with your mates, mission-minded speakers, and worship to draw you closer to God</p>
+				<a href="https://register.summerundertheson.org/?mode=conf&eventkey=413" target="_blank" class="button expand secondary">Register Now</a>
+				<div class="clearfix"></div>
 			</div>
 		</div>
 	</section>
-	<section class="section__content section__sos-events">
+
+	<section class="section__content section__suts-kids">
 		<div class="row">
 			<div class="small-12 columns">
-				<h2 class="section--heading">Abraham &amp; Sarah Trusting God:<br>Summer Salt Kids Program</h2>
+				<h3 class="subtitle__title">Summer Salt Kids Program</h3>
+			</div>
+		</div>
+		<div class="row" data-equalizer>
+			<div class="summer-evenings-images small-12 medium-5 columns" data-equalizer-watch>
+				<img src="/img/kids.jpg">
+			</div>
+			<div class="small-12 medium-6 medium-offset-1 columns" data-equalizer-watch>
 				<p>Summer Salt is a program full of activities, learning, games and music for kids from Prep to Grade 6. Run by fantastic leaders there will be all sort of fun activities including bible studies, learning, games and music all built around the story of Abraham and Sarah – Trusting God! Summer Salt runs every morning between 9am to 12:45pm and then in the afternoon from 2:15pm to 3:30pm. The kids will get to meet missionaries each day at 2:15pm and hear their stories from all around the world.</p>
 				<p>We also have a preschool program for 3 to 4 year olds. For parents with babies, there is a room looking into the auditorium with full audio and vision links so that you can enjoy all the presentations. There will be activities and toys for them to play with. If your toddler needs space, there is a room with appropraite toys and activities.</p>
 			</div>
 		</div>
 	</section>
 
-	<section data-magellan-destination="contact" class="section__content section__contact">
-	<h2 class="section--heading">Contact</h2>
+	<section id="contact" data-magellan-destination="contact" class="section__content section__contact">
+		<div class="row">
+			<div class="small-12 columns">
+				<div class="section--headingwrapper">
+					<h2 class="section--heading">Contact Us</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-12 medium-7 medium-centered large-4 columns">
+				<ul class="vcard">
+				  <li class="fn">CMS - SUTS Conference</li>
+				  <li><hr></li>
+				  <li class="street-address">PO Box 2150</li>
+				  <li class="locality">Rangeview</li>
+				  <li><span class="state">VIC</span>, <span class="zip">3132</span></li>
+				  <li class="email"><a class="vcard-link" href="mailto:vic@cms.org.au?subject=SUTS Conference">vic@cms.org.au</a></li>
+				  <li class="phone"><a class="vcard-link" href="tel://03-9894-4722/" target="_blank">(03) 9894 4722</a></li>
+				</ul>
+			</div>
+			<div class="small-12 columns">
+
+			</div>
+		</div>
 	</section>
 
 
@@ -496,7 +564,9 @@
 	<a name="register"></a>
 		<div class="row">
 			<div class="small-12 columns">
-			<h2 class="section--heading">Early Bird Pricing<br><small>(ENDS 1ST DEC)</small></h2>
+			<div class="section--headingwrapper">
+				<h2 class="section--heading pricing-header">Early Bird Pricing<br><small>(ENDS 30 NOV)</small></h2>
+			</div>
 				<div class="row">
 					<div class="small-12 medium-6 large-3 columns">
 						<ul class="pricing-table">
@@ -507,7 +577,7 @@
 							<li class="price">&nbsp;</li>
 							<li class="bullet-item">All Plenary Sessions</li>
 							<li class="bullet-item">All Seminars</li>
-							<li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+							<li class="cta-button"><a class="button" href="https://register.summerundertheson.org/?mode=conf&eventkey=407" target="_blank">Book Now</a></li>
 						</ul>
 					</div>
 					<div class="small-12 medium-6 large-3 columns">
@@ -519,7 +589,7 @@
 							<li class="price">&nbsp;</li>
 							<li class="bullet-item">All Plenary Sessions</li>
 							<li class="bullet-item">All Seminars</li>
-							<li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+							<li class="cta-button"><a class="button" href="https://register.summerundertheson.org/?mode=conf&eventkey=407" target="_blank">Book Now</a></li>
 						</ul>
 					</div>
 					<div class="small-12 medium-6 large-3 columns">
@@ -531,19 +601,106 @@
 							<li class="price">&nbsp;</li>
 							<li class="bullet-item">Great evening conversations</li>
 							<li class="bullet-item">Wei-Han Kuan &amp; Sam McGeown</li>
-							<li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+							<li class="cta-button"><a class="button" href="https://register.summerundertheson.org/?mode=conf&eventkey=407" target="_blank">Book Now</a></li>
 						</ul>
 					</div>
 					<div class="small-12 medium-6 large-3 columns">
 						<ul class="pricing-table">
 							<li class="title">Meals</li>
-							<li class="price">Dinner from $15</li>
+							<li class="price">Dinners from $10</li>
 							<li class="bullet-item">Young Adults Dinner on Thursday</li>
 							<li class="bullet-item">Big BBQ Saturday</li>
-							<li class="description">Vegetarian, Gluten-free, Dairy Free &amp; Fructose Intolerance options available.</li>
-							<li class="description">Limited lunches can be purchased from the cafeteria each day.</li>
-							<li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+							<li class="description">Vegetarian, Gluten-free, Dairy Free &amp; Fructose Intolerance options available.<br>Limited lunches can be purchased from the cafeteria each day.</li>
+							<li class="cta-button"><a class="button" href="https://register.summerundertheson.org/?mode=conf&eventkey=407" target="_blank">Book Now</a></li>
 						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section__content section__sponsors">
+		<div class="row">
+			<div class="small-12 medium-10 medium-centered large-8 large-uncentered columns">
+				<h3>Gold Sponsors</h3>
+				<div class="row">
+					<div class="sponsor__row">
+						<div class="small-4 medium-3 columns text-right">
+							<a href="https://anglicanoverseasaid.org.au/">
+								<img class="sponsor__svg" src="/img/sponsors/anglican-overseas-aid.svg" alt="Anglican Overseas Aid">
+							</a>
+						</div>
+						<div class="small-8 medium-8 medium-offset-1 columns">
+							<h4>Anglican Overseas Aid <a href="https://anglicanoverseasaid.org.au/">anglicanoverseasaid.org.au</a></h4>
+							<p>Anglican Overseas Aid is an overseas relief and development agency of the Anglican Church of Australia. Our work is inspired by the gospel of Christ, with a vision for a peaceful, just and sustainable world for all</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="sponsor__row">
+						<div class="small-4 medium-3 columns text-right">
+							<a href="http://www.missiontravel.com.au/">
+								<img class="sponsor__svg" src="/img/sponsors/mission-travel.svg" alt="Mission Travel Group">
+							</a>
+						</div>
+						<div class="small-8 medium-8 medium-offset-1 columns">
+							<h4>Mission Travel Group <a href="http://www.missiontravel.com.au/">missiontravel.com.au</a></h4>
+							<p>Mission Travel Group exists to glorify God by being a blessing to our clients, supporters and partners. Mission Travel Group is for people who want to travel with Christian purpose.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="sponsor__row">
+						<div class="small-4 medium-3 columns text-right">
+							<a href="http://signalaudio.com.au/">
+								<img class="sponsor__svg" src="/img/sponsors/signal-audio.svg" alt="Signal Audio">
+							</a>
+						</div>
+						<div class="small-8 medium-8 medium-offset-1 columns">
+							<h4>Signal Audio <a href="http://signalaudio.com.au/">signalaudio.com.au</a></h4>
+							<p>Signal Audio is a Melbourne based event production company servicing events nationwide, specialising in live sound and event design. We offer a complete production service with solutions tailored to your needs.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="sponsor__row">
+						<div class="small-4 medium-3 columns text-right">
+							<a href="http://sparklit.org/">
+								<img class="sponsor__svg" src="/img/sponsors/sparklit.svg" alt="Sparklit">
+							</a>
+						</div>
+						<div class="small-8 medium-8 medium-offset-1 columns">
+							<h4>Sparklit <a href="http://sparklit.org/">sparklit.org</a></h4>
+							<p>SparkLit advances God’s kingdom by empowering Christian writers, publishers and distributors around the world. We stimulate life-changing Christian writing so that lives, communities and cultures are transformed as people discover Jesus in a way that is authentic and culturally meaningful.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="sponsor__row">
+						<div class="small-4 medium-3 columns text-right">
+							<a href="http://cbp.org.au/">
+								<img class="sponsor__svg" src="/img/sponsors/cbp.svg" alt="Centre for Biblical Preaching">
+							</a>
+						</div>
+						<div class="small-8 medium-8 medium-offset-1 columns">
+							<h4>Centre for Biblical Preaching <a href="http://cbp.org.au/">cbp.org.au</a></h4>
+							<p>Centre for Biblical Preaching is to be a training centre that effectively equips churches throughout Melbourne, Australia and the rest of the world in expository preaching. This vision is founded on the conviction that the first and most important mark of a healthy church is faithful exposition of God’s word.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="small-12 medium-10 medium-centered large-4 large-uncentered columns">
+				<div class="row">
+					<div class="small-12 columns">
+						<h3>Silver Sponsors</h3>
+						<h4>ACCESS Ministries <a href="http://www.accessministries.org.au/">accessministries.org.au</a></h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="small-12 columns">
+						<h3>Bronze Sponsors</h3>
+						<h4>Ridley College <a href="https://www.ridley.edu.au/">ridley.edu.au</a></h4>
+						<h4>Acorn Press <a href="https://acornpress.net.au/">acornpress.net.au</a></h4>
 					</div>
 				</div>
 			</div>
@@ -553,12 +710,20 @@
 	<footer class="section__content section__pricing">
 		<div class="row">
 			<div class="small-12 medium-10 columns">&copy; CMS Victoria 2015.</div>
+			<div class="small-12 medium-2 columns">
+				<a href="http://www.cms.org.au/branch/vic"><img src="/img/sponsors/cms-awtkj.svg" alt="CMS | A World That Knows Jesus"></a>
+			</div>
 		</div>
 
 	</footer>
+
 	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="/bower_components/foundation/js/foundation.min.js"></script>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 	<script src="/js/app.js"></script>
+	<script src="/js/backstretch.js"></script>
+	// <script>
+	//   $("#missionaries").backstretch("/img/clouds.jpg");
+	//   </script>
 	</body>
 </html>

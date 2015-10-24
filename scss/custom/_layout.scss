@@ -57,11 +57,43 @@
   -webkit-animation: fadeIn 2.5s;
   animation: fadeIn 2.5s;
   opacity: 1; }
-
+.menu-logo {
+	width: rem-calc(40);
+	margin-right: rem-calc(10);
+	padding-right: rem-calc(10);
+	border-right: 1px solid $jet;
+}
 p.lead {
 	font-size: 130%;
 }
-
+hr.header-hr {
+ 	border-color: $oil;
+ 	margin-bottom: rem-calc(60);
+}
+.vcard {
+	width:100%;
+	hr {
+		border-color: $jet
+	}
+}
+.vcard-link {
+	color: $primary-color;
+	font-weight:500;
+	line-height:1,8;
+}
+.top-bar-section {
+	li {
+		border-bottom: solid 2px $white;
+		&:hover, &.active {
+			border-bottom: solid 2px $primary-color;
+		}
+		a {
+			&:hover, &.active {
+				text-decoration: none;
+			}
+		}
+	}
+}
 $section-padding: rem-calc(80);
 
 .top-bar-section ul li > a {
@@ -70,42 +102,130 @@ $section-padding: rem-calc(80);
 
 header {
 	padding: $section-padding 0;
-	background: $base;
 }
 .section__content {
 	padding: $section-padding 0;
+	@media #{$small-only} {
+		padding: $section-padding / 2 0;
+	}
 }
 .section__welcome {
 	padding-bottom: 0;
 }
-.section__missionaries {
-	margin: $section-padding 0;
-	background: $jet;
+.section__sutsyouth {
+	background: $primary-color;
+	color: $white;
 	.section--heading {
 		color: $white;
 	}
+}
+.section__sutskids {
+
+}
+.section__missionaries {
+	margin: $section-padding 0;
+	background: url('/img/clouds.jpg') no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	.section--heading {
+		display: inline-block;
+		padding: rem-calc(10) rem-calc(20);
+		color: $jet;
+		border: 5px solid $jet;
+	}
+}
+.section__venue {
+	padding-bottom: 0;
 }
 .section__contact {
 	margin: $section-padding 0;
 	background: $base;
 }
+.summer-evenings-images {
+	@media #{$small-only} {
+		margin-bottom: rem-calc(40);
+	}
+}
 .missionary--container {
 	background: $white;
 }
-.missionary--title,
+.subtitle__title {
+	margin-bottom: rem-calc(40);
+}
 .missionary--bio {
-	padding: rem-calc(5) rem-calc(10);
-	line-height:1;
+	padding: rem-calc(4) rem-calc(20);
 }
 .missionary--title {
 	@include font-condensed;
 	font-size: rem-calc(32);
+	margin-top: rem-calc(16);
 }
 .missionary--bio {
 	padding-bottom: rem-calc(20);
 }
+.section--headingwrapper {
+	@extend .text-center;
+	margin-bottom: rem-calc(80);
+	@media #{$small-only} {
+		margin-top: rem-calc(80);
+		margin-bottom: rem-calc(40);
+	}
+}
 .section--heading {
-	margin-bottom: rem-calc(60);
+	display: inline-block;
+	letter-spacing: 0.2em;
+	padding: rem-calc(10) rem-calc(60);
+	color: $jet;
+	border: 3px solid $jet;
+	&.pricing-header {
+		line-height: 1;
+	}
+	small {
+		color: $jet;
+		font-size: 60%;
+	}
+
+}
+.section__sponsors {
+	background: $silver;
+	h3 {
+		@include font-condensed;
+		font-size: rem-calc(32);
+		margin-top: rem-calc(16);
+		margin-bottom: rem-calc(40);
+		text-align: left;
+		border-bottom: 1px solid $jet;
+
+	}
+	h4 {
+		@include font-condensed;
+		font-size: rem-calc(24);
+		margin-top: 0;
+		margin-bottom: rem-calc(16);
+		text-align: left;
+		a {
+			font-family: $font-family-sans-serif;
+			font-weight: 300;
+			font-style: italic;
+			color: $jet;
+			font-size: rem-calc(16);
+			text-transform: lowercase;
+		}
+	}
+	p {
+		font-size: rem-calc(16);
+		line-height: rem-calc(20);
+	}
+	.sponsor__svg {
+		max-height: rem-calc(80);
+		max-width: rem-calc(130);
+		margin-top: rem-calc(20);
+	}
+}
+.sponsor__row {
+	margin-bottom: rem-calc(40);
 }
 #map {
   width: 100%;
@@ -115,11 +235,12 @@ header {
 
 .bio--image {
 	border-radius: 100%;
-	width: rem-calc(140);
+	width: rem-calc(180);
 	height: auto;
 	display: block;
 	margin: 0 auto;
 	margin-bottom: rem-calc(60);
+	border: 10px solid $secondary-color;
 }
 .bio--title {
 	@include font-condensed;
@@ -134,8 +255,9 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: left;
 }
 .site-title {
-	font-size: rem-calc(80);
+	font-size: rem-calc(92);
 	line-height:1;
+	margin-bottom: rem-calc(30);
 	@media #{$small-only} {
 		font-size: rem-calc(40);
 	}
@@ -146,6 +268,9 @@ h1, h2, h3, h4, h5, h6 {
 	@media #{$small-only} {
 		font-size: rem-calc(28);
 	}
+}
+.banner-image {
+	margin-top: rem-calc(120);
 }
 .title-lead {
 	@include font-condensed;

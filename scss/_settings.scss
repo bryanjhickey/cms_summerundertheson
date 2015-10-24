@@ -100,7 +100,7 @@ $white       : #FFFFFF;
 // $snow        : #F9F9F9;
 // $vapor       : #F6F6F6;
 // $white-smoke : #F5F5F5;
-// $silver      : #EFEFEF;
+$silver      : #EFEFEF;
 // $smoke       : #EEEEEE;
 // $gainsboro   : #DDDDDD;
 // $iron        : #CCCCCC;
@@ -111,13 +111,13 @@ $white       : #FFFFFF;
 // $steel       : #666666;
 // $charcoal    : #555555;
 $tuatara     : #444444;
-// $oil         : #333333;
+$oil         : #333333;
 $jet         : #222222;
 // $black       : #000000;
 
 // We use these as default colors throughout
-$primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
+$primary-color: #56526C;
+$secondary-color: #FFCA72;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
@@ -125,7 +125,7 @@ $primary-color: #008CBA;
 
 // We use these to control various global styles
 // $body-bg: $white;
-// $body-font-color: $jet;
+$body-font-color: $jet;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -250,8 +250,8 @@ $primary-color: #008CBA;
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: $font-weight-normal;
 $paragraph-font-size: rem-calc(18);
-$paragraph-line-height: rem-calc(22);
-$paragraph-margin-bottom: rem-calc(22);
+$paragraph-line-height: rem-calc(24);
+$paragraph-margin-bottom: rem-calc(24);
 $paragraph-aside-font-size: rem-calc(16);
 $paragraph-aside-line-height: $paragraph-line-height;
 // $paragraph-aside-font-style: italic;
@@ -268,9 +268,9 @@ $paragraph-aside-line-height: $paragraph-line-height;
 // $code-padding: rem-calc(2) rem-calc(5) rem-calc(1);
 
 // We use these to style anchors
-// $anchor-text-decoration: none;
-// $anchor-text-decoration-hover: none;
-// $anchor-font-color: $primary-color;
+$anchor-text-decoration: none;
+$anchor-text-decoration-hover: underline;
+$anchor-font-color: scale-color($secondary-color, $lightness: -20%);
 // $anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -14%);
 
 // We use these to style the <hr> element
@@ -305,7 +305,7 @@ $paragraph-aside-line-height: $paragraph-line-height;
 // $acronym-underline: 1px dotted $gainsboro;
 
 // We use these to control padding and margin
-// $microformat-padding: rem-calc(10 12);
+$microformat-padding: rem-calc(40 44);
 // $microformat-margin: rem-calc(0 0 20 0);
 
 // We use these to control the border styles
@@ -315,7 +315,7 @@ $paragraph-aside-line-height: $paragraph-line-height;
 
 // We use these to control full name font styles
 // $microformat-fullname-font-weight: $font-weight-bold;
-// $microformat-fullname-font-size: rem-calc(15);
+$microformat-fullname-font-size: rem-calc(26);
 
 // We use this to control the summary font styles
 // $microformat-summary-font-weight: $font-weight-bold;
@@ -1400,8 +1400,8 @@ $tabs-navigation-font-color: $white;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: $oil;
-// $topbar-bg: $topbar-bg-color;
+$topbar-bg-color: $white;
+$topbar-bg: $topbar-bg-color;
 
 // Height and margin
 // $topbar-height: rem-calc(45);
@@ -1412,18 +1412,18 @@ $topbar-title-weight: 500;
 // $topbar-title-font-size: rem-calc(17);
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: $white;
-// $topbar-link-color-hover: $white;
-// $topbar-link-color-active: $white;
-// $topbar-link-color-active-hover: $white;
-// $topbar-link-weight: $font-weight-normal;
+$topbar-link-color: $jet;
+$topbar-link-color-hover: $jet;
+$topbar-link-color-active: $jet;
+$topbar-link-color-active-hover: $jet;
+$topbar-link-weight: 500;
 $topbar-link-font-size: rem-calc(12);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
-// $topbar-link-bg-hover: $jet;
+$topbar-link-bg-hover: $white;
 // $topbar-link-bg-color-hover: $charcoal;
-// $topbar-link-bg-active: $primary-color;
-// $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
+$topbar-link-bg-active: $white;
+$topbar-link-bg-active-hover: $white;
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: ($topbar-height / 3);
@@ -1433,11 +1433,11 @@ $topbar-link-font-size: rem-calc(12);
 // $topbar-button-top: 7px;
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: $oil;
-// $topbar-dropdown-link-color: $white;
-// $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
-// $topbar-dropdown-link-bg: $oil;
-// $topbar-dropdown-link-bg-hover: $jet;
+$topbar-dropdown-bg: $white;
+$topbar-dropdown-link-color: $white;
+$topbar-dropdown-link-color-hover: $topbar-link-color-hover;
+$topbar-dropdown-link-bg: $white;
+$topbar-dropdown-link-bg-hover: $white;
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: $white;
@@ -1447,14 +1447,14 @@ $topbar-link-font-size: rem-calc(12);
 // $topbar-dropdown-label-text-transform: uppercase;
 // $topbar-dropdown-label-font-weight: $font-weight-bold;
 // $topbar-dropdown-label-font-size: rem-calc(10);
-// $topbar-dropdown-label-bg: $oil;
+$topbar-dropdown-label-bg: $white;
 
 // Top menu icon styles
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: rem-calc(13);
 // $topbar-menu-link-weight: $font-weight-bold;
-// $topbar-menu-link-color: $white;
-// $topbar-menu-icon-color: $white;
+$topbar-menu-link-color: $jet;
+$topbar-menu-icon-color: $jet;
 // $topbar-menu-link-color-toggled: $jumbo;
 // $topbar-menu-icon-color-toggled: $jumbo;
 // $topbar-menu-icon-position: $opposite-direction; // Change to $default-float for a left menu icon
