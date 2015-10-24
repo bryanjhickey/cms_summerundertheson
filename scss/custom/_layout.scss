@@ -234,6 +234,11 @@ header {
 	@media #{$small-only} {
 		margin-bottom: rem-calc(20);
 	}
+	img {
+		@media #{$small-only} {
+			width:100%;
+		}
+	}
 }
 #map {
   width: 100%;
