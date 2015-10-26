@@ -57,6 +57,20 @@
   -webkit-animation: fadeIn 2.5s;
   animation: fadeIn 2.5s;
   opacity: 1; }
+  .tabs dd>a, .tabs .tab-title>a {
+  	font-weight: 500;
+  	letter-spacing: 0.2em;
+  	&:hover, &.active {
+  		font-weight: 500;
+  		letter-spacing: 0.2em;
+  		text-decoration: none;
+  	}
+  }
+  .tabs dd.active a,  .tabs dd a, .tabs .tab-title.active a, .tabs .tab-title a {
+  	&:focus {
+  		outline: none;
+  	}
+  }
 .menu-logo {
 	width: rem-calc(40);
 	margin-right: rem-calc(10);
@@ -122,6 +136,7 @@ header {
 .section__sutskids {
 
 }
+
 .section__missionaries {
 	margin: $section-padding 0;
 	background: url('/img/clouds.jpg') no-repeat fixed;
@@ -296,4 +311,31 @@ h1, h2, h3, h4, h5, h6 {
 	width: 25%;
 	text-align: center;
 	border:1px solid $white;
+}
+.schedule__text {
+	p {
+		font-size: rem-calc(14);
+		margin-bottom: rem-calc(0);
+	}
+}
+.schedule__title {
+	display: block;
+	text-align: center;
+	width: 400px;
+	padding-bottom: rem-calc(20);
+	margin: 0 auto;
+	margin-top: rem-calc(40);
+	margin-bottom: rem-calc(40);
+	border-bottom: 3px solid $jet;
+}
+.schedule__subtitle {
+	text-align: left;
+	letter-spacing: 0.1em;
+	font-size: rem-calc(16);
+	margin-bottom: rem-calc(10);
+	margin-top: rem-calc(20);
+	padding-bottom: 0;
+	&:first-of-type {
+		margin-top: 0;
+	}
 }

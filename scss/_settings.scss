@@ -1339,10 +1339,10 @@ $price-item-font-size: rem-calc(16);
 
 // $tabs-navigation-padding: rem-calc(16);
 $tabs-navigation-bg-color: $tuatara;
-$tabs-navigation-active-bg-color: $primary-color;
-// $tabs-navigation-hover-bg-color: scale-color($tabs-navigation-bg-color, $lightness: -6%);
+$tabs-navigation-active-bg-color: scale-color($secondary-color, $lightness: -16%);
+$tabs-navigation-hover-bg-color:$secondary-color;
 $tabs-navigation-font-color: $white;
-// $tabs-navigation-active-font-color: $tabs-navigation-font-color;
+$tabs-navigation-active-font-color: $jet;
 // $tabs-navigation-font-size: rem-calc(16);
 // $tabs-navigation-font-family: $body-font-family;
 
