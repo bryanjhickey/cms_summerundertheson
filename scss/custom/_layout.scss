@@ -85,6 +85,7 @@ hr.header-hr {
  	margin-bottom: rem-calc(60);
 }
 .vcard {
+	background: rgba(255,255,255,0.7);
 	width:100%;
 	hr {
 		border-color: $jet
@@ -137,7 +138,7 @@ header {
 
 }
 
-.section__missionaries {
+.section__missionaries, .section__contact {
 	margin: $section-padding 0;
 	background: url('/img/clouds.jpg') no-repeat fixed;
 	-webkit-background-size: cover;
@@ -155,8 +156,8 @@ header {
 	padding-bottom: 0;
 }
 .section__contact {
-	margin: $section-padding 0;
-	background: $base;
+ 	padding: $section-padding 0;
+ 	margin:0;
 }
 .summer-evenings-images {
 	@media #{$small-only} {
