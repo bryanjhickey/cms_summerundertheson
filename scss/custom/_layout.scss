@@ -133,11 +133,12 @@ $section-padding: rem-calc(80);
 
 header {
 	padding: $section-padding * 6 0;
-	background: url('/img/header.jpg') no-repeat fixed;
-	-webkit-background-size: scroll;
-	-moz-background-size: scroll;
-	-o-background-size: scroll;
-	background-size: scroll;
+	background: url('/img/header.jpg') no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 .section__content {
 	padding: $section-padding 0;
@@ -171,7 +172,8 @@ header {
 
 .section__missionaries, .section__contact {
 	margin: $section-padding 0;
-	background: url('/img/clouds.jpg') no-repeat center;
+	background-image: url('/img/clouds.jpg') no-repeat;
+	background-position: center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
