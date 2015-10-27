@@ -120,6 +120,11 @@ hr.header-hr {
 		}
 	}
 }
+.top-bar .name h1 a {
+	&:hover {
+		text-decoration: none;
+	}
+}
 $section-padding: rem-calc(80);
 
 .top-bar-section ul li > a {
@@ -127,12 +132,12 @@ $section-padding: rem-calc(80);
 }
 
 header {
-	padding: $section-padding * 3 0;
+	padding: $section-padding * 6 0;
 	background: url('/img/header.jpg') no-repeat fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	-webkit-background-size: scroll;
+	-moz-background-size: scroll;
+	-o-background-size: scroll;
+	background-size: scroll;
 }
 .section__content {
 	padding: $section-padding 0;
