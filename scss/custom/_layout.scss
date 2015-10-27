@@ -137,14 +137,17 @@ $section-padding: rem-calc(80);
 }
 header {
 	padding: $section-padding * 6 0;
-	background: url('/img/header.jpg') no-repeat;
-	background-position: center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	// background: url('/img/header.jpg') no-repeat;
+	// background-position: center;
+	// -webkit-background-size: cover;
+	// -moz-background-size: cover;
+	// -o-background-size: cover;
+	// background-size: cover;
 	@media #{$small-only} {
 		padding: $section-padding * 3 0;
+	}
+	@media #{$medium-only} {
+		padding: $section-padding * 5 0;
 	}
 }
 .section__content {
@@ -179,12 +182,12 @@ header {
 
 .section__missionaries, .section__contact {
 	margin: $section-padding 0;
-	background-image: url('/img/clouds.jpg') no-repeat;
-	background-position: center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	// background-image: url('/img/clouds.jpg') no-repeat;
+	// background-position: center;
+	// -webkit-background-size: cover;
+	// -moz-background-size: cover;
+	// -o-background-size: cover;
+	// background-size: cover;
 	.section--heading {
 		display: inline-block;
 		padding: rem-calc(10) rem-calc(20);
@@ -281,12 +284,23 @@ header {
 		max-height: rem-calc(80);
 		max-width: rem-calc(130);
 		margin-top: rem-calc(20);
+		@media #{$small-only} {
+			margin-top: rem-calc(40);
+			margin-bottom: rem-calc(20);
+
+		}
 	}
 }
 .sponsor__row {
 	margin-bottom: rem-calc(40);
 }
 .gold-sponsor-image {
+	a {
+		display: block;
+		@media #{$small-only} {
+			text-align: center;
+		}
+	}
 	@media #{$small-only} {
 		margin-bottom: rem-calc(20);
 	}
