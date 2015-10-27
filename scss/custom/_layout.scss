@@ -49,6 +49,16 @@
   to {
     opacity: 1; } }
 
+.button {
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	font-size: rem-calc(14);
+	&:hover {
+		text-decoration: none;
+	}
+}
 .tabs-content > .content-wrapper {
   display: none;
   opacity: 0; }
@@ -60,6 +70,7 @@
   .tabs dd>a, .tabs .tab-title>a {
   	font-weight: 500;
   	letter-spacing: 0.2em;
+  	text-decoration: none;
   	&:hover, &.active {
   		font-weight: 500;
   		letter-spacing: 0.2em;
@@ -116,7 +127,12 @@ $section-padding: rem-calc(80);
 }
 
 header {
-	padding: $section-padding 0;
+	padding: $section-padding * 3 0;
+	background: url('/img/header.jpg') no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 .section__content {
 	padding: $section-padding 0;
@@ -132,6 +148,16 @@ header {
 	color: $white;
 	.section--heading {
 		color: $white;
+	}
+	.button {
+		background: $white;
+		color: $primary-color;
+		border: 2px $white solid;
+		text-decoration: none;
+		&:hover, &:focus{
+			background: $primary-color;
+			color: $white;
+		}
 	}
 }
 .section__sutskids {
@@ -284,6 +310,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: left;
 }
 .site-title {
+	color: $white;
 	font-size: rem-calc(92);
 	line-height:1;
 	margin-bottom: rem-calc(30);
@@ -292,6 +319,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 .sub-title {
+	color: $white;
 	@include font-condensed;
 	font-size: rem-calc(26);
 	@media #{$small-only} {
@@ -308,6 +336,9 @@ h1, h2, h3, h4, h5, h6 {
 		font-size: rem-calc(20);
 	}
 }
+.heading__accomodation {
+	margin-top: rem-calc(60);
+}
 .tab-title {
 	width: 25%;
 	text-align: center;
@@ -315,7 +346,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .schedule__text {
 	p {
-		font-size: rem-calc(14);
+		font-size: rem-calc(16);
 		margin-bottom: rem-calc(0);
 	}
 }
