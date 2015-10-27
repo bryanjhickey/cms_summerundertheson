@@ -130,7 +130,11 @@ $section-padding: rem-calc(80);
 .top-bar-section ul li > a {
 	letter-spacing: 0.1em;
 }
-
+.visably-hide {
+	@media #{$small-only} {
+		display: none;
+	}
+}
 header {
 	padding: $section-padding * 6 0;
 	background: url('/img/header.jpg') no-repeat;
