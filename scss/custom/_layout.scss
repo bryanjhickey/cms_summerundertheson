@@ -139,6 +139,9 @@ header {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	@media #{$small-only} {
+		padding: $section-padding * 3 0;
+	}
 }
 .section__content {
 	padding: $section-padding 0;
