@@ -166,13 +166,13 @@ header {
 		color: $white;
 	}
 	.button {
-		background: $white;
-		color: $primary-color;
+		background: $primary-color;
+		color: $white;
 		border: 2px $white solid;
 		text-decoration: none;
 		&:hover, &:focus{
-			background: $primary-color;
-			color: $white;
+			background: $white;
+			color: $primary-color;
 		}
 	}
 }
