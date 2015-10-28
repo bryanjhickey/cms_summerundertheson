@@ -244,9 +244,11 @@ header {
 	&.pricing-header {
 		line-height: 1;
 	}
-	small {
+	span.small-heading {
+		font-family: "alternate-gothic-no-1-d";
 		color: $jet;
 		font-size: 60%;
+		letter-spacing: 0.3em;
 	}
 
 }
