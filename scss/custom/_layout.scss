@@ -402,3 +402,11 @@ h1, h2, h3, h4, h5, h6 {
 		margin-top: 0;
 	}
 }
+.site-credit {
+	color: $jet;
+	border: 1px dotted $white;
+	&:hover {
+		border-color: $jet;
+		text-decoration: none;
+	}
+}
