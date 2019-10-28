@@ -1,6 +1,4 @@
-# Foundation libsass template
-
-This is a template to start your own project that uses Grunt and libsass!
+# CMS SUTS 2015 Website
 
 ## Requirements
 
@@ -13,7 +11,7 @@ You'll need to have the following items installed before continuing.
 ## Quickstart
 
 ```bash
-git clone git@github.com:zurb/foundation-libsass-template.git
+git clone git@github.com:bryanjhickey/cms_suts_15.git
 npm install && bower install
 ```
 
@@ -25,5 +23,5 @@ And you're set!
 
 ## Directory Structure
 
-  * `scss/_settings.scss`: Foundation configuration settings go in here
+  * `scss/_settings.scss`: configuration settings go in here
   * `scss/app.scss`: Application styles go here
