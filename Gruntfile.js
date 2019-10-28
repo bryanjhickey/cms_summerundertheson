@@ -1,18 +1,21 @@
+const sass = require("node-sass");
+
 module.exports = function(grunt) {
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
+    pkg: grunt.file.readJSON("package.json"),
 
     sass: {
       options: {
-        includePaths: ['bower_components/foundation/scss']
+        includePaths: ["bower_components/foundation/scss"]
       },
       dist: {
         options: {
-          outputStyle: 'compressed',
-          sourceMap: true,
+          implementation: sass,
+          outputStyle: "compressed",
+          sourceMap: true
         },
         files: {
-          'css/app.css': 'scss/app.scss'
+          "css/app.css": "scss/app.scss"
         }
       }
     },
@@ -22,19 +25,19 @@ module.exports = function(grunt) {
         options: {
           reload: true
         },
-        files: ['Gruntfile.js']
+        files: ["Gruntfile.js"]
       },
 
       sass: {
-        files: 'scss/**/*.scss',
-        tasks: ['sass']
+        files: "scss/**/*.scss",
+        tasks: ["sass"]
       }
     }
   });
 
-  grunt.loadNpmTasks('grunt-sass');
-  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks("grunt-sass");
+  grunt.loadNpmTasks("grunt-contrib-watch");
 
-  grunt.registerTask('build', ['sass']);
-  grunt.registerTask('default', ['build','watch']);
-}
+  grunt.registerTask("build", ["sass"]);
+  grunt.registerTask("default", ["build", "watch"]);
+};
